@@ -1,0 +1,107 @@
+Лог с момента 2018-11-08 17:09:50
+IP адреса с наибольшим количетвом запросов c момента последнего запуска скрипта:
+193.201.224.225: 158
+79.137.51.84: 55
+46.4.122.197: 24
+62.141.105.210: 14
+95.163.255.47: 1
+95.163.255.46: 1
+87.250.233.75: 1
+66.249.64.17: 1
+62.75.198.172: 1
+5.255.251.4: 1
+ 
+Запрашиваемые адреса с наибольшим количеством запросов c момента последнего запуска скрипта:
+/wp-login.php: 158
+/: 8
+/robots.txt: 3
+/web-server-%D0%BF%D0%BE%D0%B4-%D0%BA%D0%BB%D1%8E%D1%87/: 2
+/sql: 2
+ 
+Все ошибки c момента последнего запуска:
+511261 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511263 "/usr/share/nginx/html/drupal/index.html" is not found (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /drupal/ HTTP/1.1", host: "62.75.198.172:80"
+511264 "/usr/share/nginx/html/cms/index.html" is not found (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /cms/ HTTP/1.1", host: "62.75.198.172:80"
+511265 open() "/usr/share/nginx/html/status" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /status?full=true HTTP/1.1", host: "62.75.198.172:80"
+511267 open() "/usr/share/nginx/html/script" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /script HTTP/1.1", host: "62.75.198.172:80"
+511268 open() "/usr/share/nginx/html/jenkins/script" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /jenkins/script HTTP/1.1", host: "62.75.198.172:80"
+511269 open() "/usr/share/nginx/html/login" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /login HTTP/1.1", host: "62.75.198.172:80"
+511270 open() "/usr/share/nginx/html/jmx-console" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /jmx-console HTTP/1.1", host: "62.75.198.172:80"
+511271 open() "/usr/share/nginx/html/manager/html" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /manager/html HTTP/1.1", host: "62.75.198.172:80"
+511272 open() "/usr/share/nginx/html/tomcat-cms/cmd.jsp" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /tomcat-cms/cmd.jsp HTTP/1.1", host: "62.75.198.172:80"
+511273 open() "/usr/share/nginx/html/dfn/nman.jsp" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /dfn/nman.jsp HTTP/1.1", host: "62.75.198.172:80"
+511274 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511275 open() "/usr/share/nginx/html/dfn/df.jsp" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /dfn/df.jsp HTTP/1.1", host: "62.75.198.172:80"
+511276 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511277 open() "/usr/share/nginx/html/Catalina/df.jsp" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /Catalina/df.jsp HTTP/1.1", host: "62.75.198.172:80"
+511278 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511279 open() "/usr/share/nginx/html/host/cmd.jsp" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /host/cmd.jsp HTTP/1.1", host: "62.75.198.172:80"
+511280 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511282 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511284 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511283 open() "/usr/share/nginx/html/administrator" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET //administrator HTTP/1.1", host: "62.75.198.172:80"
+511285 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511286 open() "/usr/share/nginx/html/joomla/administrator" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /joomla/administrator HTTP/1.1", host: "62.75.198.172:80"
+511287 open() "/usr/share/nginx/html/cms/administrator" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /cms/administrator HTTP/1.1", host: "62.75.198.172:80"
+511288 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511289 open() "/usr/share/nginx/html/Joomla/administrator" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /Joomla/administrator HTTP/1.1", host: "62.75.198.172:80"
+511290 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511291 open() "/usr/share/nginx/html/msd" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /msd HTTP/1.1", host: "62.75.198.172:80"
+511292 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511293 open() "/usr/share/nginx/html/mySqlDumper" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /mySqlDumper HTTP/1.1", host: "62.75.198.172:80"
+511294 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511295 open() "/usr/share/nginx/html/msd1.24stable" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /msd1.24stable HTTP/1.1", host: "62.75.198.172:80"
+511296 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511297 open() "/usr/share/nginx/html/msd1.24.4" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /msd1.24.4 HTTP/1.1", host: "62.75.198.172:80"
+511298 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511299 open() "/usr/share/nginx/html/mysqldumper" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /mysqldumper HTTP/1.1", host: "62.75.198.172:80"
+511300 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511301 open() "/usr/share/nginx/html/MySQLDumper" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /MySQLDumper HTTP/1.1", host: "62.75.198.172:80"
+511302 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511303 open() "/usr/share/nginx/html/mysql" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /mysql HTTP/1.1", host: "62.75.198.172:80"
+511304 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511305 open() "/usr/share/nginx/html/sql" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /sql HTTP/1.1", host: "62.75.198.172:80"
+511306 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511307 open() "/usr/share/nginx/html/cgi-bin/php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /cgi-bin/php HTTP/1.1", host: "62.75.198.172:80"
+511308 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511310 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511309 open() "/usr/share/nginx/html/cgi-bin/php5" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /cgi-bin/php5 HTTP/1.1", host: "62.75.198.172:80"
+511311 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511312 open() "/usr/share/nginx/html/phpmyadmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /phpmyadmin HTTP/1.1", host: "62.75.198.172:80"
+511313 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511314 open() "/usr/share/nginx/html/phpMyAdmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /phpMyAdmin HTTP/1.1", host: "62.75.198.172:80"
+511315 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511316 open() "/usr/share/nginx/html/mysql" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /mysql HTTP/1.1", host: "62.75.198.172:80"
+511317 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511318 open() "/usr/share/nginx/html/sql" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /sql HTTP/1.1", host: "62.75.198.172:80"
+511319 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511320 open() "/usr/share/nginx/html/myadmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /myadmin HTTP/1.1", host: "62.75.198.172:80"
+511321 open() "/usr/share/nginx/html/phpMyAdmin-4.2.1-all-languages" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /phpMyAdmin-4.2.1-all-languages HTTP/1.1", host: "62.75.198.172:80"
+511322 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511323 open() "/usr/share/nginx/html/phpMyAdmin-4.2.1-english" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /phpMyAdmin-4.2.1-english HTTP/1.1", host: "62.75.198.172:80"
+511324 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511325 open() "/usr/share/nginx/html/xampp/phpmyadmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /xampp/phpmyadmin HTTP/1.1", host: "62.75.198.172:80"
+511326 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511327 open() "/usr/share/nginx/html/typo3/phpmyadmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /typo3/phpmyadmin HTTP/1.1", host: "62.75.198.172:80"
+511328 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511329 open() "/usr/share/nginx/html/webadmin" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /webadmin HTTP/1.1", host: "62.75.198.172:80"
+511330 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 79.137.51.84, server: 0.0.0.0:443
+511332 open() "/usr/share/nginx/html/sqlite/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /sqlite/main.php HTTP/1.1", host: "62.75.198.172:80"
+511333 open() "/usr/share/nginx/html/SQLite/SQLiteManager-1.2.4/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /SQLite/SQLiteManager-1.2.4/main.php HTTP/1.1", host: "62.75.198.172:80"
+511334 open() "/usr/share/nginx/html/SQLiteManager-1.2.4/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /SQLiteManager-1.2.4/main.php HTTP/1.1", host: "62.75.198.172:80"
+511335 open() "/usr/share/nginx/html/sqlitemanager/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /sqlitemanager/main.php HTTP/1.1", host: "62.75.198.172:80"
+511336 open() "/usr/share/nginx/html/SQlite/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /SQlite/main.php HTTP/1.1", host: "62.75.198.172:80"
+511337 open() "/usr/share/nginx/html/SQLiteManager/main.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /SQLiteManager/main.php HTTP/1.1", host: "62.75.198.172:80"
+511338 open() "/usr/share/nginx/html/webdav" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /webdav HTTP/1.1", host: "62.75.198.172:80"
+511340 open() "/usr/share/nginx/html/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET //wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+511341 open() "/usr/share/nginx/html/wordpress/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /wordpress/wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+511342 open() "/usr/share/nginx/html/wp/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /wp/wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+511343 open() "/usr/share/nginx/html/blog/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /blog/wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+511344 open() "/usr/share/nginx/html/Wordpress/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /Wordpress/wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+511345 open() "/usr/share/nginx/html/Blog/wp-login.php" failed (2: No such file or directory), client: 79.137.51.84, server: _, request: "GET /Blog/wp-login.php HTTP/1.1", host: "62.75.198.172:80"
+ 
+Cписок всех кодов возврата с указанием их кол-ва с момента последнего запуска:
+200: 206
+404: 50
+499: 2
+301: 1
