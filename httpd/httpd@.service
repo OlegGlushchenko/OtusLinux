@@ -1,0 +1,17 @@
+[Unit]
+Description=The Apache HTTP Server %i
+After=network.target remote-fs.target nss-lookup.target
+Documentation=man:httpd(8)
+Documentation=man:apachectl(8)
+
+[Service]
+Type=notify
+ExecStart=/usr/sbin/httpd -f /etc/httpd/conf/%i.conf -DFOREGROUND
+PIDFile=/run/httpd/%i.pid
+ExecReload=/usr/sbin/httpd $OPTIONS -k graceful
+ExecStop=/bin/kill -WINCH ${MAINPID}
+KillSignal=SIGCONT
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

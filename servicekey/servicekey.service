@@ -1,0 +1,7 @@
+[Unit]
+Description=Script for finding keyword
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/sysconfig/servicekey
+ExecStart=/usr/bin/servicekey.sh
