@@ -1,0 +1,32 @@
+--------racing-with-different-nice-----
+real    0m6.597s
+user    0m1.079s
+sys     0m3.239s
+----I'am -19 nice----
+
+real    0m10.255s
+user    0m1.004s
+sys     0m3.156s
+----I'am +19 nice----
+
+--------racing-with-different-nice-----
+real    0m4.725s
+user    0m1.144s
+sys     0m3.142s
+----I'am -19 nice----
+
+real    0m9.333s
+user    0m0.990s
+sys     0m3.153s
+----I'am +19 nice----
+
+--------racing-with-different-nice-----
+real    0m4.635s
+user    0m1.064s
+sys     0m3.143s
+----I'am -19 nice----
+
+real    0m9.374s
+user    0m1.037s
+sys     0m3.213s
+----I'am +19 nice----
