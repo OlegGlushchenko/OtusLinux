@@ -1,0 +1,8 @@
+---
+- name: Main | Playbook for installing web server with monitoring utils
+  hosts: all
+  become: true
+  roles:
+    - monitoring
+    - tuning
+    - web

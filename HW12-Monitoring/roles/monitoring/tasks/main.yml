@@ -1,0 +1,24 @@
+---
+# Task for monitoring utils
+  - name: Install EPEL Repo package from standart repo
+    yum:
+      name: epel-release
+      state: present
+    tags:
+      - epel-package
+      - packages
+
+  - name: Install Monitoring Utils
+    yum:
+      name:
+        - htop
+        - atop
+        - sysstat
+        - iotop
+        - iftop
+        - procps-ng
+        - ncdu
+      state: present
+    tags:
+      - monitoring-utils
+      - packages

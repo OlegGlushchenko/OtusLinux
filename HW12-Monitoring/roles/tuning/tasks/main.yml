@@ -1,0 +1,22 @@
+---
+#Task for tuning OS
+- name: Setup sysctl values
+  sysctl:
+    name: "{{item.name}}"
+    value: "{{item.value}}"
+    state: present
+  loop:
+    - { name: 'vm.swappiness', value: '1' }                               # настройка агрессивности “высвапливания” памяти
+    - { name: 'vm.overcommit_memory', value: '2' }                        # аллоцировать не больше чем RAM + SWAP
+    - { name: 'net.ipv6.conf.all.disable_ipv6', value: '1' }              # отключение ipv6 на всех интерфейсах
+    - { name: 'net.core.rmem_max', value: '8388608' }                     # устанавливаем в 8Мб максимальный размер буфера передачи данных
+    - { name: 'net.core.wmem_max', value: '8388608' }                     # устанавливаем в 8Мб максимальный размер буфера приема данных
+    - { name: 'net.core.rmem_default', value: '65536' }                   # Устанавливаем в 65Кб размер буферов по умолчанию для передачи данных через сокеты
+    - { name: 'net.core.wmem_default', value: '65536' }                   # Устанавливаем в 65Кб размер буферов по умолчанию для отправки данных через сокеты
+    - { name: 'net.ipv4.tcp_rmem', value: '4096 87380 8388608' }          # настройки памяти, резервируемой для буферов передачи сокета
+    - { name: 'net.ipv4.tcp_wmem', value: '4096 87380 8388608' }          # настройки памяти, резервируемой для буферов приема сокета
+    - { name: 'vm.dirty_background_ratio', value: '5' }                   # процент системной памяти, который можно заполнить dirty pages до того, как фоновые процессы pdflush запишет их на диск
+    - { name: 'vm.dirty_ratio', value: '10' }                             # принудительно чистить буферы, когда они занимают более 10% размера ОЗУ (для целостности данных)
+    - { name: 'kernel.core_pattern', value: '/var/core/%E.%t.%p' }        # формат имени (и пути), которое будет использоваться для сохранения core dump
+  tags:
+    - sysctl-tuning
