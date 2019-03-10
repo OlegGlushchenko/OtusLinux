@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vim: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+  config.vm.box_check_update = false
+
+  config.vm.define "server", primary: true do |s|
+    s.vm.hostname = 'borg-server'
+    s.vm.network "private_network", ip: "192.168.111.10"
+  end
+  
+  config.vm.define "client1" do |c|
+    c.vm.hostname = 'borg-client1'
+    c.vm.network "private_network", ip: "192.168.111.11"
+  end
+
+  config.vm.define "client2" do |c|
+    c.vm.hostname = 'borg-client2'
+    c.vm.network "private_network", ip: "192.168.111.12"
+  end  
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "provision_backup.yml"
+  end
+end

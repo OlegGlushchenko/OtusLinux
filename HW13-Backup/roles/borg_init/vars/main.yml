@@ -1,0 +1,4 @@
+---
+# Var file for borg
+backup_user: borg
+backup_server_addr: 192.168.111.10

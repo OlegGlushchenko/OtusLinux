@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+BACKUP_USER="{{ backup_user }}"
+SERVER="{{ backup_server_addr }}"
+
+REPOSITORY=$BACKUP_USER@$SERVER:{{ ansible_hostname }}_BorgRepo
+
+borg create -v --stats  $REPOSITORY::'{now:%Y-%m-%d-%H-%M}' /etc

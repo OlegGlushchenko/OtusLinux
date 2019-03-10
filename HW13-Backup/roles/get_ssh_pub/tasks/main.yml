@@ -1,0 +1,15 @@
+---
+# Generate client's ssh_key and fetch it to host
+  - name: Generate client's ssh_key and fetch it to host
+    block:
+      - name: Generate client's ssh key
+        user:
+          name: root
+          generate_ssh_key: yes
+          ssh_key_file: .ssh/id_rsa
+        register: key
+      - name: Fetch ssh pub key
+        fetch:
+          src: /root/.ssh/id_rsa.pub
+          dest: ./pub_key/{{ inventory_hostname }}/
+          flat: yes

@@ -1,0 +1,25 @@
+---
+- name: Main | Playbook for init servers and install BORG
+  hosts: all_servers
+  become: true
+  roles:
+    - initialize
+    - borg_install 
+
+- name: Get client's ssh_key
+  hosts: borg_clients
+  become: true
+  roles:
+    - get_ssh_pub
+
+- name: Give ssh_key to server
+  hosts: borg_server
+  become: true
+  roles:
+    - give_ssh_pub
+
+- name: Start borg backup
+  hosts: borg_clients
+  become: true
+  roles:
+    - borg_init

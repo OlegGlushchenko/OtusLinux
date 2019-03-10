@@ -1,0 +1,8 @@
+---
+#Give ssh pub key to server
+  - name: Give ssh pub key to server
+    authorized_key:
+      user: borg
+      state: present
+      key: "{{ lookup('file', './pub_key/{{ item }}//id_rsa.pub') }}"
+    with_items: "{{ groups['borg_clients'] }}"

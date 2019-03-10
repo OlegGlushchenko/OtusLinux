@@ -1,0 +1,26 @@
+---
+# Task install borg
+  - name: Install BORG Repo package from standart repo
+    yum:
+      name: borgbackup
+      state: present
+    tags:
+      - borg
+      - packages
+
+# Task create borg user
+  - name: Create borg user
+    user:
+      name: borg
+    tags:
+      - borg
+      - user
+
+# Task create directory for scripts
+  - name: Create backup scripts dir
+    file: 
+      path: /etc/borg 
+      state: directory 
+      mode: 0755 
+      owner: root
+      group: root

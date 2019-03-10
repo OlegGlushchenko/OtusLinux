@@ -1,0 +1,39 @@
+---
+#Tasks for init and start borg backup
+  - name: Tasks for init and start borg backup
+    block:
+      - name: Write the server host key to known hosts
+        shell: "ssh-keyscan -H {{ backup_server_addr }} >> ~/.ssh/known_hosts"
+      - name: Init repository
+        shell: borg init -e none {{ backup_user }}@{{ backup_server_addr }}:{{ ansible_hostname }}_BorgRepo
+        register: shell_result
+        failed_when: "'FAILED' in shell_result.stderr"
+      - name: BORG | Create BORG script file from template
+        template:
+          src: backup.sh.j2
+          dest: /etc/borg/backup.sh
+          mode: 0755 
+  
+      - name: Create once a day backup cronjob for backup 
+        cron:
+          name: 'borg dayly backup to {{ backup_server_addr }}'
+          job: '/etc/borg/backup.sh'
+          day: '*'
+          hour: 12
+          minute: 10
+          state: present
+          user: root
+        notify:
+          - restart cron
+
+      - name: Create every 5 minutes backup cronjob for backup 
+        cron:
+          name: 'borg every 5 minutes backup to {{ backup_server_addr }}'
+          job: '/etc/borg/backup.sh'
+          day: '*'
+          hour: '*'
+          minute: '*/5'
+          state: present
+          user: root
+        notify:
+          - restart cron
