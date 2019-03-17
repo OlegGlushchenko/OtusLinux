@@ -1,0 +1,11 @@
+---
+  - name: Install EPEL Repo package from standart repo
+    yum:
+      name: epel-release
+      state: present
+
+  - name: install nginx
+    yum:
+      name: nginx
+      state: present
+    notify: restart nginx

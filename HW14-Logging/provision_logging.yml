@@ -1,0 +1,18 @@
+---
+- name: Setup log server
+  hosts: log
+  become: True
+  gather_facts: False
+  roles:
+    - host_entry
+    - rsyslog_serv
+    - audit_serv
+- name: Setup web server with nginx
+  hosts: web
+  become: True
+  gather_facts: False
+  roles:
+    - initialize_web
+    - host_entry
+    - logs_to_remote
+    - audit_client

@@ -1,0 +1,5 @@
+opposite_ip: 192.168.11.11
+opposite_dns: log
+remote_log_serv: log
+audit_dir: /etc/nginx
+audit_file: nginx_conf

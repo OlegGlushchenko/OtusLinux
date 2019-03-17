@@ -1,0 +1,6 @@
+---
+  - name: add "{{ opposite_ip }} {{ opposite_dns }}" to hosts
+    lineinfile:
+      path: /etc/hosts
+      state: present
+      line: '{{ opposite_ip }} {{ opposite_dns }}'

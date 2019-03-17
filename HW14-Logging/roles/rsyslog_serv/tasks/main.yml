@@ -1,0 +1,13 @@
+---
+  - name: Lets rsyslog listen on 514 TCP
+    lineinfile:
+      path: /etc/rsyslog.conf
+      regexp: '^#({{ item.config }}.*)'
+      line: '\1'
+      backrefs: yes
+    loop:
+      - { config: '\$ModLoad imudp' }
+      - { config: '\$UDPServerRun 514' }
+      - { config: '\$ModLoad imtcp' }
+      - { config: '\$InputTCPServerRun 514' }
+    notify: restart rsyslog

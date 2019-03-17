@@ -1,0 +1,10 @@
+[all_servers]
+master ansible_host=127.0.0.1 ansible_port=2222 ansible_private_key_file=.vagrant/machines/master/virtualbox/private_key
+node ansible_host=127.0.0.1 ansible_port=2200 ansible_private_key_file=.vagrant/machines/node/virtualbox/private_key
+
+[web]
+master ansible_host=127.0.0.1 ansible_port=2222 ansible_private_key_file=.vagrant/machines/master/virtualbox/private_key
+
+[log]
+node ansible_host=127.0.0.1 ansible_port=2200 ansible_private_key_file=.vagrant/machines/node/virtualbox/private_key
+
